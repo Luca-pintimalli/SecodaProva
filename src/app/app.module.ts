@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { CompletedComponent } from './pages/completed/completed.component';
 import { UtentiComponent } from './pages/utenti/utenti.component';
 import { Page404Component } from './pages/page404/page404.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { Page404Component } from './pages/page404/page404.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

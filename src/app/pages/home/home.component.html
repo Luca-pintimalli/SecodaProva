@@ -6,7 +6,7 @@
               <p>Completato: {{p.completed ? 'si' : 'no'}}</p>
                     <p class="card-text">{{p.todo}}</p>
                   <h5 class="card-title">Assegnato da:{{p.user.firstName}}</h5>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <input type="checkbox" [(ngModel)]="p.completed">
                 </div>
               </div>
         </div>
