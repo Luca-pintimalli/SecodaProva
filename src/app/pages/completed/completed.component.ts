@@ -16,7 +16,7 @@ export class CompletedComponent {
 
 
   ngOnInit(): void {
-    this.toDoSvc.getCompletedTodos()
+   this.toDo = this.toDoSvc.getCompletedTodos()
   }
 
 

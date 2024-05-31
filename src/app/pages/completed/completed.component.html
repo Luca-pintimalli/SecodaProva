@@ -1,14 +1,21 @@
-<div class="container p-5 ">
+<div class="container p-5 mt-5 ">
     <div class="row">
         <div class="col" *ngFor="let g of toDo">
-            <div class="card" style="width: 18rem;">
+            <div class="card p-1 mx-2 mb-5" style="width: 18rem;" [ngClass]="{'bg-success': g.completed , 'bg-warning': !g.completed}">
+              
+                
+
+              
                
-                <div class="card-body">
-                  <p class="card-text">{{g.id}}</p>
-                  <h5 class="card-title">Assegnato da:{{g.userId}}</h5>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card-body"> 
+                  <p>Completato: {{g.completed ? 'si' : 'no'}}</p>
+                  <p class="card-text">{{g.todo}}</p>
+                  <h5 class="card-title">Assegnato da:{{g.user}}</h5>
                 </div>
               </div>
         </div>
     </div>
-</div>
+
+
+
+     
